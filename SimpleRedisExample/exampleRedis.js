@@ -1,8 +1,8 @@
-const config = require('./config');
+const config = require('../config');
 const process = require('process');
 const express = require('express');
 const redis = require('redis');
-const { redis_port, redis_host } = require('./config');
+const { redis_port, redis_host } = require('../config');
 
 const app  = express();
 
