@@ -19,6 +19,7 @@
   "homepage": "https://github.com/srikanthsree50/RedisSocketIo#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "redis": "^3.1.2"
+    "redis": "^3.1.2",
+    "socketio": "^1.0.0"
   }
 }
