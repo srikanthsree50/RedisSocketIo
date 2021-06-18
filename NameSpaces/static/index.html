@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocketIo</title>
+</head>
+<body>
+   <h1> Socket.io<h1>
+       <ul id="list"></ul>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+var socket = io('/namespace',{transports:['websocket'], upgrade:false});
+
+var addLi = (message) => {
+var li = document.createElement('li');
+li.appendChild(document.createTextNode(message));
+document.getElementById('list').appendChild(li);
+};
+socket.on('event',addLi);
+</script>
+</body>
+</html>
